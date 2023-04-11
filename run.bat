@@ -1,4 +1,8 @@
-:: powershell -ExecutionPolicy Bypass -File ./youtubecourse/testscript.ps1
-powershell -ExecutionPolicy Bypass -File D:\PowerShell\script.ps1
-:: powershell -f testscript.ps1
-:: powershell Set-ExecutionPolicy -ExecutionPolicy Restricted -File testscript.ps1
+@echo off
+
+if "%1"=="" ( set psScriptFullPath="C:\Workspaces\PowerShell\script.ps1" ) else ( set psScriptFullPath=%1 )
+echo psScriptFullPath=%psScriptFullPath%
+@REM echo param2=%2
+@REM echo param3=%3
+
+powershell -ExecutionPolicy Bypass -File %psScriptFullPath%
