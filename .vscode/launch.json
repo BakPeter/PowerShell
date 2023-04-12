@@ -25,6 +25,17 @@
       "request": "launch",
       "script": "./youtubecourse/testscript.ps1",
       "cwd": "${cwd}"
+    },
+    {
+      "name": "Launch OrganizeFiles.ps1",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "./UdemyCourse/OrganizeFiles.ps1",
+      "cwd": "${cwd}",
+      "args": [
+        "C:\\Users\\bakpe\\Downloads",
+        "C:\\Users\\bakpe\\Downloads\\Destination"
+      ]
     }
   ]
 }

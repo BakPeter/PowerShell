@@ -1,5 +1,5 @@
 ﻿#parameters
-param([string]$dir = "C:\Users\peterb\Downloads")
+param([string]$dir = "C:\Users\bakpe\Downloads")
 
 #functions
 function Get-DirInfo($dir) {
